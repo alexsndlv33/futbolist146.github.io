@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: black;
+}
+
+a {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 3px;
+  transition: background-size .3s;
+}
+
+a:hover {
+  background-size: 100% 2px;
+  color: red;
+}
+
+
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20%;
+}
+
+.title {
+  width: 21ch;
+  overflow: hidden;
+  color: white;
+  font-size: 50px;
+  font-family: monospace;
+  white-space: nowrap;
+  animation: printed-text 3s steps(21);
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+.title_inst {
+  width: 19ch;
+  overflow: hidden;
+  color: white;
+  font-size: 45px;
+  font-family: monospace;
+  white-space: nowrap;
+  animation: printed-text 4s steps(19);
+  padding: 0px;
+  height: 50px;
+  float: none;
+}
+
+@keyframes printed-text{
+  from {
+    width: 0%;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50%;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1%;
+  }
+  a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: background-size .3s;
+  }
+
+  a:hover {
+    background-size: 100% 2px;
+    color: red;
+  }
